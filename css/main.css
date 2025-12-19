@@ -1,0 +1,102 @@
+/*HEADER*/
+html {
+    scroll-behavior: smooth;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+}
+
+body{
+    background-color: #FBFBFB;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+.header-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Ascender Sans W01 Bold";
+    
+    background-color: #2d2e2ec2;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+
+    width: 100%;
+    height: 60px;
+    
+}
+.header-main img{
+    margin-left: 20px;
+    height: 40px;
+}
+
+.header-main-nav{
+    height: 100%;
+    width: fit-content;
+}
+
+.header-main-nav ul{
+    margin: 8px 0px;
+    padding-right: 20px;
+
+    list-style: none;
+}
+
+.header-main-nav ul li{
+    display: inline ;
+}
+
+.header-main-nav ul li a{
+    text-decoration: none;
+
+    padding: 10px 10px;
+    color: #ffffff;
+
+    display: inline-block;
+    transition: 
+        transform 0.2s ease-in-out,
+        color 0.2s ease-in-out;
+}
+
+.header-main-nav ul li a:hover{
+    transform: scale(1.08); 
+    background: linear-gradient(90deg, #ff9900, #ff0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header-main-cta{
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin-right: 20px;
+    
+    background-color: white;
+    height: fit-content;
+    padding: 6px;
+    border-radius: 10px;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.header-main-cta:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.15);
+}
+
+.header-main-cta:hover span{
+        background: linear-gradient(90deg, #ff9900, #ff0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
