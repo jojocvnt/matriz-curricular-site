@@ -31,9 +31,16 @@ main .main-intro h1{
     font-size: 60px;
     color: rgb(255, 255, 255);
     padding: 0px 10px;
-    line-height: 50px;
+    line-height: 38px;
 }
 
+.main-intro-course{
+    font-size: 30px;
+}
+.main-intro-passo{
+
+    font-size: 40px;
+}
 main .main-intro p {
     
     margin-top: 15px;
@@ -368,7 +375,8 @@ main .main-intro p {
 .pricing {
     width: 100%;
     height: calc(100vh - 60px);
-    
+    scroll-margin-top: 100px;
+
     background-image: url(../imgs/auditorio.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -404,27 +412,45 @@ main .main-intro p {
     
     z-index: 1;
 }
-
 .pricing-content{
-    margin-top: 50px;
     position: relative;
     z-index: 2;
-    padding:40px;
 
     display: flex;
+    flex-direction: column;
+
+}
+
+.pricing-content h2{
+    color: white;
+    text-align: center;
+    font-size: 42px;
+
+}
+
+
+.pricing-grid{
+    position: relative;
+    z-index: 2;
+    padding: 0 100px;
+    
+    
+    display: flex;
+    
     align-items: center;
     
-    gap: 30px;
+    
+    gap: 26px;
 }
 
 .pricing-card{
 
     border-radius: 26px;
     width: fit-content;
-    background-color: rgba(70, 70, 70, 0.593);
+    background-color: rgba(70, 70, 70, 0.732);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    padding: 60px;
+    padding: 30px;
     border: 1px solid rgba(0, 0, 0, 0.133);
     transition: 0.2s ease;
     box-shadow: 0px 0px 0px #656565;
@@ -432,7 +458,7 @@ main .main-intro p {
 }
 .pricing-card:hover{
     transform: scale(1.01);
-    box-shadow: 0px 1px 20px #656565;
+    box-shadow: 0px 1px 20px #65656534;
 }
 
 .pricing-card h2{
@@ -456,6 +482,7 @@ main .main-intro p {
 .pricing-card ul li{
     font-size: 17px;
     line-height: 23px;
+    margin-top: 10px;
     color: rgb(232, 232, 232);
     border-bottom: 4px dotted #656565;
 }
@@ -467,10 +494,12 @@ main .main-intro p {
 }
 
 .pricing-card a {
+    
+    
     margin-top: -10px;
-    text-align: center;
+
     font-size: 18px;
-    background-color: rgba(223, 223, 223, 0.184);
+    background-color: rgb(242, 233, 233);
     padding: 15px;
     border-radius: 15px;
     text-decoration: none;
@@ -479,19 +508,22 @@ main .main-intro p {
     
 
     display: inline-block;
+
+    
     transition: 0.2s ease;
 }
 .pricing-card a:hover{
     transform: scale(1.05);
 }
 .pricing-card span{
+    
     background: linear-gradient(90deg, #ededed, #656565);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .pricing-card .price-i{
-        
+    
     background: linear-gradient(90deg, #fffb00, #ffb700);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -504,13 +536,13 @@ main .main-intro p {
 }
 
 .pricing-card .button-e{
-    background: linear-gradient(90deg, #ffffff, #a4a4a4);
+    background: linear-gradient(90deg, #000000, #a4a4a4);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .pricing-card .button-i{
 
-    background: linear-gradient(90deg, #000000, #373737);
+    background: linear-gradient(90deg, #ff7b00d0, #ffcc00);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -521,4 +553,200 @@ main .main-intro p {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
+}
+
+
+/*CTA*/ 
+.cta {
+    width: 100%;
+    height: calc(100vh - 60px);
+    scroll-margin-top: 90px;
+    
+    background-image: url(../imgs/bgcta2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    position: relative;
+    overflow: hidden;
+}
+
+.cta::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        to bottom,
+        rgb(15, 15, 15) 0%,
+        rgba(15, 15, 15, 0.555) 25%,
+        transparent 50%,
+        rgba(15, 15, 15, 0.3) 75%,
+        rgb(15, 15, 15) 100%
+    );
+
+    backdrop-filter: blur(4px) brightness(0.9);
+    -webkit-backdrop-filter: blur(4px) brightness(0.9);
+
+    z-index: 1;
+    pointer-events: none; /* 🔥 ISSO resolve o hover */
+}
+
+.cta-content{
+    position: relative; /* 🔥 ativa o z-index */
+    z-index: 2;
+
+    padding-top: 170px;
+
+}
+
+.cta-course{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-course-quotes{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+       
+}
+.cta-course-quotes-logo{
+    margin-top: -150px;
+    text-transform:uppercase;
+    text-align: center;
+}
+
+.cta-course-quotes-logo img{
+    height: 360px;
+    margin-left: -20px;
+}
+
+.cta-course-quotes p{
+    background: linear-gradient(90deg, #fffcfc, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-align: center;
+    font-size: 23px;
+    line-height: 32px;
+    
+    margin-top: -130px;
+    margin-left: 5px;
+    padding-bottom: 30px;
+}
+
+.cta-course-quotes a {
+    border-radius: 15px;
+    height: fit-content;
+    padding: 15px;
+
+
+    color: #000;
+    background-color: rgb(245, 245, 245);
+    text-decoration: none;
+
+    display: inline-block;
+    transition: 0.2s ease;
+
+    font-size: 20px;
+    text-transform:uppercase;
+
+}
+
+.cta-course-quotes a:hover{
+    transform: scale(1.05);
+}
+
+.cta-course-quotes span:hover{
+    background: linear-gradient(90deg, #ff0303, #ffa600);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+
+.cta-course-quotes-logo{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+
+
+/*FOOTER*/
+
+.footer{
+    width: 100%;
+ 
+    background-color: #0F0F0F;
+}
+
+.footer-content{
+    border-top: 1px solid rgba(255, 255, 255, 0.266);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top:80px;
+    padding-bottom: 80px;
+}
+
+.footer-content-quotes h3 {
+    color: white;
+    position: relative;
+    display: inline-block;
+}
+
+.footer-content-quotes h3::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 2px;
+
+    width: 0;
+    height: 2px;
+    background-color: #ededed;
+
+    transform: translateX(-50%);
+    transition: width 0.9s cubic-bezier(.4,0,.2,1);
+}
+
+.footer-content-quotes h3:hover::after {
+    width: 100%;
+}
+
+.footer-content-quotes p{
+    margin-top: 10px;
+    
+    line-height: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-content-quotes p a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+
+    background: linear-gradient(90deg, #ff0303, #ffa600);
+    background-size: 200%;
+    background-position: 0%;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: white;
+
+    transition: 
+      background-position 0.45s cubic-bezier(.4,0,.2,1),
+      -webkit-text-fill-color 0.1s ease;
+}
+
+.footer-content-quotes p a:hover {
+    cursor: pointer;
+    background-position: 100%;
+    -webkit-text-fill-color: transparent;
 }
