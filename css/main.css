@@ -1,16 +1,22 @@
 /*HEADER*/
-html {
+html,body {
     scroll-behavior: smooth;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
 
 }
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Edge, Safari */
+
+}
+
 *{
     margin: 0;
     padding: 0;
     font-family: "Poppins";
-}
-
-body{
-    background-color: #FBFBFB;
 }
 
 @font-face {
@@ -100,4 +106,27 @@ body{
         background: linear-gradient(90deg, #ff9900, #ff0000);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+
+
+
+
+
+
+@media(max-width:1062px) {
+ 
+    /*HEADER*/
+html {
+    scroll-behavior: smooth;
+
+}
+
+.header-main{
+    display: none;
+ 
+
+
+}
+
 }
