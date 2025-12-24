@@ -638,12 +638,13 @@ main .main-intro p {
     font-size: 23px;
     line-height: 32px;
     
-    margin-top: -130px;
+    margin-top: -140px;
     margin-left: 5px;
     padding-bottom: 30px;
 }
 
 .cta-course-quotes a {
+    margin-top: 20px;
     border-radius: 15px;
     height: fit-content;
     padding: 15px;
