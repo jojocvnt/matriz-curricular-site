@@ -763,12 +763,6 @@ main .main-intro p {
 
 @media only screen and (max-width:660px){
 
-    main,
-    .learning,
-    .pricing,
-    .cta {
-    background-color: #0F0F0F;
-  }
 
 
     main{
@@ -1113,15 +1107,6 @@ main .main-intro p {
         line-height: 20px;
         font-size: 15px;
     }
-  .footer-content-quotes h3::after {
-    width: 0;
-    transition: none;
-    }
-
-    .footer-content-quotes h3:hover::after {
-    width: 0;
-    }
-
 
     .footer-content-quotes p{
     margin-top: 10px;
