@@ -856,6 +856,7 @@ main .main-intro p {
     }
 
     .index-category-box ul li{
+        font-size: 15px;
         line-height: 20px;
 
     }
