@@ -375,7 +375,7 @@ main .main-intro p {
 /*PRICE*/
 .pricing {
     width: 100%;
-    height: calc(100vh - 60px);
+    min-height: calc(100vh - 60px);
     scroll-margin-top: 100px;
 
     background-image: url(../imgs/auditorio.jpg);
@@ -384,7 +384,7 @@ main .main-intro p {
     background-size: cover;
     
     position: relative;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .pricing::before {
@@ -423,22 +423,23 @@ main .main-intro p {
 }
 
 .pricing-content h2{
+    margin-top: 60px;
     color: white;
     text-align: center;
     font-size: 42px;
-
+    
 }
 
 
 .pricing-grid{
     position: relative;
     z-index: 2;
-    padding: 0 100px;
-    
+    padding:30px;
+    margin-bottom: 40px;
     
     display: flex;
     
-    align-items: center;
+    align-items: stretch; 
     
     
     gap: 26px;
@@ -456,6 +457,9 @@ main .main-intro p {
     transition: 0.2s ease;
     box-shadow: 0px 0px 0px #656565;
 
+    display: flex;
+    flex-direction: column;
+
 }
 .pricing-card:hover{
     transform: scale(1.01);
@@ -463,6 +467,7 @@ main .main-intro p {
 }
 
 .pricing-card h2{
+    margin-top: 20px;
     font-size: 35px;
     line-height: 35px;
     color: white;
@@ -479,7 +484,7 @@ main .main-intro p {
 }
 
 .pricing-card ul{
-    margin-top: 15px;
+    margin-top: 30px;
     list-style: none;
 }
 
@@ -492,6 +497,7 @@ main .main-intro p {
 }
 
 .pricing-card p{
+    flex-grow: 1;
     margin-top: 15px;
     color: #cacaca;
     margin-bottom: 30px;
@@ -976,10 +982,11 @@ main .main-intro p {
     font-size: 40px;
     }
     .pricing-grid{
-    padding: 0 50px;
+    
     display: flex;
     flex-direction: column;
-
+    flex-wrap: wrap;
+    padding: 0 30px;
     gap: 10px;
 
     }
