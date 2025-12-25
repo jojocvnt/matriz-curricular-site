@@ -213,16 +213,11 @@ main .main-intro p {
         linear-gradient(
             to bottom,
             rgb(15, 15, 15) 0%,
-            rgba(15, 15, 15, 0.555) 25%,
-            transparent 50%,
-            transparent 50%,
-            rgba(15, 15, 15, 0.3) 75%,
-            rgb(15, 15, 15) 100%
+            rgba(15, 15, 15, 0.449) 25%,
+            rgba(15, 15, 15, 0.497) 75%,
+            rgb(14, 14, 14) 100%
         );
     
-    /* Efeito de desfoque (glaussiam) */
-    backdrop-filter: blur(4px) brightness(0.9);
-    -webkit-backdrop-filter: blur(4px) brightness(0.9);
     
     z-index: 1;
 }
@@ -434,15 +429,15 @@ main .main-intro p {
 .pricing-grid{
     position: relative;
     z-index: 2;
-    padding:55px;
-    margin-bottom: 40px;
+    padding:65px;
+    margin-bottom: 70px;
     
     display: flex;
     
     align-items: stretch; 
     
     
-    gap: 60px;
+    gap: 40px;
 }
 
 .pricing-card{
@@ -980,43 +975,17 @@ main .main-intro p {
     width: 100%;
     }
     .pricing-content h2{
+
     font-size: 40px;
+    padding: 20px;
     }
     .pricing-grid{
     
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    padding: 0 30px;
-    gap: 10px;
-
-    }
-
-    /*PRICE*/
-
-    .pricing {
-    width: 100%;
-    height: fit-content;
-
-    }
-
-    .pricing-content{
-    padding-bottom: 40px;
-    }
-
+    padding: 0 50px;
     
-
-    .pricing-content h2{
-    font-size: 30px;
-    padding: 16px;
-
-    }
-
-
-    .pricing-grid{
-    padding: 0 20px;
-    gap: 6px;
-
     }
 
     
