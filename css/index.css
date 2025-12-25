@@ -434,7 +434,7 @@ main .main-intro p {
 .pricing-grid{
     position: relative;
     z-index: 2;
-    padding:30px;
+    padding:55px;
     margin-bottom: 40px;
     
     display: flex;
@@ -442,7 +442,7 @@ main .main-intro p {
     align-items: stretch; 
     
     
-    gap: 26px;
+    gap: 60px;
 }
 
 .pricing-card{
@@ -452,7 +452,7 @@ main .main-intro p {
     background-color: rgba(70, 70, 70, 0.732);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    padding: 30px;
+    padding: 40px;
     border: 1px solid rgba(0, 0, 0, 0.133);
     transition: 0.2s ease;
     box-shadow: 0px 0px 0px #656565;
