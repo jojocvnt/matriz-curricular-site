@@ -371,7 +371,7 @@ main .main-intro p {
 .pricing {
     width: 100%;
     min-height: calc(100vh - 60px);
-    scroll-margin-top: 100px;
+    scroll-margin-top: 0px;
 
     background-image: url(../imgs/auditorio.jpg);
     background-position: center;
@@ -504,14 +504,14 @@ main .main-intro p {
     margin-top: -10px;
 
     font-size: 18px;
-    background-color: rgb(242, 233, 233);
-    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.442);
+    padding: 20px;
     border-radius: 15px;
     text-decoration: none;
     color: #0F0F0F;
     text-transform: uppercase;
     
-
+    text-align: center;
     display: inline-block;
 
     
@@ -522,14 +522,14 @@ main .main-intro p {
 }
 .pricing-card span{
     
-    background: linear-gradient(90deg, #ededed, #656565);
+    background: linear-gradient(90deg, #ededed, #ffffff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .pricing-card .price-i{
     
-    background: linear-gradient(90deg, #fffb00, #ffb700);
+    background: linear-gradient(90deg, #ff6a00, #ffb700);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -541,13 +541,13 @@ main .main-intro p {
 }
 
 .pricing-card .button-e{
-    background: linear-gradient(90deg, #000000, #a4a4a4);
+    background: linear-gradient(90deg, #000000, #6c6c6c);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .pricing-card .button-i{
 
-    background: linear-gradient(90deg, #ff7b00d0, #ffcc00);
+    background: linear-gradient(90deg, #ffa600d0, #fff700);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -648,7 +648,7 @@ main .main-intro p {
     margin-top: 20px;
     border-radius: 15px;
     height: fit-content;
-    padding: 15px;
+    padding: 20px;
 
 
     color: #000;
@@ -656,7 +656,7 @@ main .main-intro p {
     text-decoration: none;
 
     display: inline-block;
-    transition: 0.2s ease;
+    transition: 0.5s ease;
 
     font-size: 20px;
     text-transform:uppercase;
@@ -668,10 +668,10 @@ main .main-intro p {
 }
 
 .cta-course-quotes span:hover{
+    transition: 0.5s ease;
     background: linear-gradient(90deg, #ff0303, #ffa600);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
 }
 
 
@@ -1086,6 +1086,7 @@ main .main-intro p {
     
 
     .cta-course-quotes a {
+    padding: 15px;
     font-size: 15px;
     }
 
