@@ -9,12 +9,12 @@
   }
 
   .header-intro-content-text h1{
-    font-size: 25px;
-    line-height:26px;
+    font-size: 45px;
+    line-height:40px;
   }
 
   .header-intro-content-text p{
-    font-size: 18px;
+    font-size: 15px;
     line-height: 20px;
     padding: 0 17px;
   }
@@ -35,6 +35,16 @@
   .main-equip-content h1 {
     font-size: 45px;
     line-height: 46px;
+  }
+  .main-equip-content-grid-card p{
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .main-equip-card-header-1 h2{
+    line-height: 25px;
+  }
+   .main-equip-card-header-3 h2{
+    line-height: 25px;
   }
   .main-equip-content-grid-card{
     width: 90%;
