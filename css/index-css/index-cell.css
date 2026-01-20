@@ -1,0 +1,88 @@
+@media (max-width: 768px) {
+
+  /* HEADER */
+
+  .header-intro-content-img img{
+    height: 140px;
+    margin-top: 0px;
+    margin-bottom: -60px;
+  }
+
+  .header-intro-content-text h1{
+    font-size: 25px;
+    line-height:26px;
+  }
+
+  .header-intro-content-text p{
+    font-size: 18px;
+    line-height: 20px;
+    padding: 0 17px;
+  }
+
+  .header-intro-content-button{
+    width: 180px;
+    font-size: 18px;
+  }
+  .header-intro-svg{
+    display: none;
+  }
+  /* EQUIP */
+  .main-equip-content-grid{
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+  }
+
+  .main-equip-content-grid-card{
+    width: 90%;
+    height: auto;
+  }
+
+  /* SERVICES */
+  .main-services-content-item{
+    grid-template-columns: 1fr;
+  }
+
+  .service-step p,
+  .service-step-2 p{
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  /* COURSES */
+  .main-courses-content{
+    padding: 80px 20px;
+  }
+
+  .main-courses-content-itens{
+    flex-direction: column;
+  }
+
+  .main-courses-content-itens img{
+    height: 280px;
+    box-shadow: none;
+  }
+
+  .main-courses-content-texts,
+  .main-courses-content-card{
+    width: 100%;
+    padding: 10px;
+  }
+
+
+  /* FOOTER */
+  .footer-content{
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  /*INDEX MAIN*/
+  .cursor-glow{
+    display: none;
+  }
+
+
+}
+
+
+

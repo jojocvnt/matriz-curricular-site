@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "Poppins";
+    src: url("../../fonts/Poppins-Regular.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Poppins";
+    background-color: #ffffff;
+}
+html,body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.cursor-glow {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    background: #ffffffb3;
+    
+    box-shadow:
+    0 0 28px rgba(255,255,255,0.6),
+    0 0 20px rgba(255,255,255,0.4),
+    0 0 24px rgba(255,255,255,0.2);
+
+}
